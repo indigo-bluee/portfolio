@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/*基本レイアウトの調整
+------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'sans-serif';
+  line-height: 1.8;
+  color: #333333;
+  letter-spacing: 0.08rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0% 4%;
+}
+
+/*ローディング 
+------------------------*/
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1;
+}
+
+#loader-bg p {
+  color: #56AC81;
+  font-family: 'arial';
+  font-weight: bold;
+}
+
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+/*header
+------------------------*/
+header {
+  margin-bottom: 70px;
+}
+
+.bg-color {
+  background-color: #56AC81;
+  min-height: 350px;
+}
+
+.bg-color .profile {
+  text-align: center;
+}
+
+.bg-color .profile img {
+  margin: 60px 0px 15px;
+  height: 165px;
+  width: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.bg-color .profile h1 {
+  color: #ffffff;
+  letter-spacing: 0.13rem;
+  font-family: 'arial';
+  font-size: 2.2rem;
+}
+
+.profile-main {
+  margin-top: 50px;
+}
+
+.profile-main i, .profile-main a {
+  color: #56AC81;
+  vertical-align: middle;
+}
+
+.profile-main a {
+  padding-right: 20px;
+  word-break: break-all;
+}
+
+.profile-main i {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+.profile-main p {
+  margin-top: 20px;
+  font-size: 0.875rem;
+}
+
+/*tab
+------------------------*/
+.tab-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tab-wrap .tab-title2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 40px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.tab-wrap .tab-title2 li {
+  list-style: none;
+}
+
+.tab-wrap .tab-title2 li img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.tab-wrap .tab-title2 li h2 {
+  color: #56AC81;
+  font-family: 'arial';
+  font-size: 1.8rem;
+  margin-bottom: -7px;
+}
+
+.tab-wrap .tab-title2 li a {
+  color: #A7A7A7;
+}
+
+.tab-wrap .tab-title2 li i {
+  color: #56AC81;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.tab-wrap .tab-title2 li h2, .tab-wrap .tab-title2 li a {
+  margin-left: 25px;
+}
+
+.tab-wrap .tab-main {
+  margin-bottom: 50px;
+}
+
+.tab-wrap .tab-main p {
+  font-size: 0.875rem;
+}
+
+.tab-wrap .tab-main .tab-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-wrap .tab-main .tab-second .hour {
+  color: #A7A7A7;
+  width: 80%;
+  padding-top: 5px;
+}
+
+.tab-wrap .tab-main .tab-second img.icon, .tab-wrap .tab-main .tab-second i {
+  padding-right: 15px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tab-wrap .tab-main .tab-second .icon:last-child {
+  padding-right: 0px;
+}
+
+.tab-wrap .tab-main .tab-second i {
+  font-size: 2rem;
+  color: #56AC81;
+  padding-right: 15px;
+}
+
+.tab-wrap .tab-main .main-text {
+  margin-bottom: 60px;
+}
+
+.tab-wrap .tab-main .tabimg-main {
+  max-width: 100%;
+  height: atuo;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #EDEDED;
+}
+
+.tab-wrap .tab-main .tum-wr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+i {
+  font-size: 1.7rem;
+}
+
+.tab-label {
+  color: White;
+  background: LightGray;
+  margin-right: 10px;
+  padding: 15px 95px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-bottom: 50px;
+}
+
+.tab-label i {
+  text-align: center;
+}
+
+.tab3 {
+  margin-right: 0px;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+
+/* アクティブなタブ */
+.tab-switch:checked + .tab-label {
+  background: #56AC81;
+}
+
+.tab-switch:checked + .tab-label + .tab-content {
+  display: block;
+}
+
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
+}
+
+/*footer
+------------------------*/
+footer {
+  margin: 80px 0px 30px;
+  text-align: center;
+  color: #56AC81;
+}
+
+.br-sp {
+  display: none;
+}
+
+/*タブレット版
+------------------------*/
+@media screen and (max-width: 960px) {
+  .tab-label {
+    padding: 15px 13%;
+  }
+}
+
+/*モバイル版
+------------------------*/
+@media screen and (max-width: 600px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+  }
+  /*共通
+------------------------*/
+  .bg-color .profile h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  p {
+    line-height: 1.7rem;
+  }
+  /*ヘッダー
+------------------------*/
+  header .br-sp {
+    display: block;
+  }
+  /*タブ
+------------------------*/
+  .tab-wrap {
+    max-width: 100%;
+  }
+  .tab-wrap .tab-label {
+    padding: 3% 11%;
+  }
+  .tab-wrap .tab-title2 {
+    padding: 0% 0% 5%;
+  }
+  .tab-wrap .tab-title2 li img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+  }
+  .tab-wrap .tab-title2 li a {
+    word-break: break-all;
+    font-size: 0.875rem;
+    margin-left: 0px;
+  }
+  .tab-wrap .tab-title2 li h2 {
+    font-size: 6vmin;
+    margin-bottom: -6px;
+    margin-left: 0px;
+    white-space: nowrap;
+  }
+  .tab-wrap .tab-main .tab-second .hour {
+    padding-top: 0px;
+    font-size: 0.750rem;
+  }
+  .tab-wrap .tab-main .tab-second i {
+    font-size: 1.5rem;
+    padding-right: 10px;
+  }
+  .tab-wrap .tab-main .tab-second img.icon {
+    height: 25px;
+    padding-right: 10px;
+  }
+  /*.tab-wrap 終わり*/
+  /*footer
+------------------------*/
+  small {
+    font-size: 2vmin;
+  }
+}
+
+/*モバイル版 終わり*/
+/*# sourceMappingURL=style.css.map */
