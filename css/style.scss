@@ -117,10 +117,9 @@ header {
 // タブ
 .tab-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     .tab-title2 {
-        display: flex;
         padding: 0px 0px 40px;
         border-bottom: 1px solid $line-color;
         li {
@@ -285,9 +284,9 @@ header{
  /*タブ
 ------------------------*/
 .tab-wrap {
-    max-width: 100%;
+    width: auto;
     .tab-label {
-        padding: 3% 11%;
+        width: 30%;
     }
 
 .tab-title2 {
