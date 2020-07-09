@@ -189,7 +189,7 @@ header {
 
 .tab-wrap .tab-main .tab-second .hour {
   color: #A7A7A7;
-  width: 80%;
+  width: 77%;
   padding-top: 5px;
 }
 
@@ -238,7 +238,9 @@ i {
   color: White;
   background: LightGray;
   margin-right: 10px;
-  padding: 15px 95px;
+  width: 32%;
+  text-align: center;
+  padding: 15px 14%;
   border-radius: 15px 15px 0px 0px;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -287,12 +289,6 @@ footer {
 
 /*タブレット版
 ------------------------*/
-@media screen and (max-width: 960px) {
-  .tab-label {
-    padding: 15px 13%;
-  }
-}
-
 /*モバイル版
 ------------------------*/
 @media screen and (max-width: 600px) {
@@ -318,18 +314,23 @@ footer {
   /*タブ
 ------------------------*/
   .tab-wrap {
-    max-width: 100%;
+    width: auto;
   }
   .tab-wrap .tab-label {
-    padding: 3% 11%;
+    width: 31%;
+    text-align: center;
+    padding: 15px 0%;
   }
   .tab-wrap .tab-title2 {
     padding: 0% 0% 5%;
   }
+  .tab-wrap .tab-title2 li .icon-img {
+    margin-right: 40px;
+  }
   .tab-wrap .tab-title2 li img {
     width: 50px;
     height: auto;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .tab-wrap .tab-title2 li a {
     word-break: break-all;
@@ -358,7 +359,8 @@ footer {
   /*footer
 ------------------------*/
   small {
-    font-size: 2vmin;
+    font-size: 3vmin;
+    white-space: nowrap；;
   }
 }
 

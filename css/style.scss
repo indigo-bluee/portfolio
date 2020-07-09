@@ -162,7 +162,7 @@ header {
 
             .hour {
                 color: $second-color;
-                width: 80%;
+                width: 77%;
                 padding-top: 5px;
             }
             img.icon,i{
@@ -202,7 +202,9 @@ i {
     color: White;
     background: LightGray;
     margin-right: 10px;
-    padding: 15px 95px;
+    width: 32%;
+    text-align : center;
+    padding: 15px 14%;
     border-radius: 15px 15px 0px 0px;
     order: -1;
     margin-bottom: 50px;
@@ -245,12 +247,7 @@ footer {
  /*タブレット版
 ------------------------*/
 @media screen and (max-width:960px) {
-    .tab-label {
-        padding: 15px 13%;
-    }
-  
-  
-  
+
   }
 
 
@@ -285,18 +282,24 @@ header{
  /*タブ
 ------------------------*/
 .tab-wrap {
-    max-width: 100%;
+    width: auto;
+    
     .tab-label {
-        padding: 3% 11%;
+        width: 31%;
+        text-align : center;
+        padding: 15px 0%;
     }
 
 .tab-title2 {
     padding: 0% 0% 5%;
     li {
+    .icon-img {
+       margin-right: 40px;
+    }
     img {
         width: 50px;
         height: auto;
-        margin-right: 30px;
+        margin-right: 20px;
     }
    a {
        word-break: break-all;
@@ -308,7 +311,7 @@ header{
         font-size: 6vmin;
         margin-bottom: -6px;
         margin-left: 0px;
-        white-space: nowrap
+        white-space: nowrap;
 
    }
  }
@@ -338,7 +341,9 @@ header{
  /*footer
 ------------------------*/
 small {
-    font-size: 2vmin;
+    font-size: 3vmin;
+    white-space: nowrap；
+    
 }
 
 
